@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verotech - Developer Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        .marquee {
+            animation: marquee 19s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .tech-gradient {
+            background: linear-gradient(135deg, #1a2634 0%, #2a3f54 100%);
+        }
+    </style>
+</head>
+<body class="bg-[#d7edfe]">
+    <!-- Header -->
+    <header class="tech-gradient text-white">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="flex items-center">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/widecanvas-d0dd4.appspot.com/o/logos%2Ft7.webp?alt=media&token=289af246-20e3-4f61-8152-0139f0a453d9" alt="Verotech Logo" class="h-12">
+                </a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="hover:text-cyan-400 transition">Home</a>
+                    <a href="/interview" class="hover:text-cyan-400 transition">Interview Q/A</a>
+                    <a href="/course" class="hover:text-cyan-400 transition">Course</a>
+                    <a href="/practice" class="hover:text-cyan-400 transition">Practice</a>
+                    <a href="/contest" class="hover:text-cyan-400 transition">Contest</a>
+                    <div class="dropdown relative">
+                        <button class="hover:text-cyan-400 transition">Degree</button>
+                        <div class="dropdown-menu absolute hidden bg-white text-gray-800 mt-2 py-2 w-40 rounded-lg shadow-xl">
+                            <a href="/degree/bca" class="block px-4 py-2 hover:bg-gray-100">BCA</a>
+                            <a href="/degree/bba" class="block px-4 py-2 hover:bg-gray-100">BBA</a>
+                            <a href="/degree/bms" class="block px-4 py-2 hover:bg-gray-100">BMS</a>
+                            <a href="/degree/mca" class="block px-4 py-2 hover:bg-gray-100">MCA</a>
+                            <a href="/degree/mba" class="block px-4 py-2 hover:bg-gray-100">MBA</a>
+                            <a href="/degree/imca" class="block px-4 py-2 hover:bg-gray-100">IMCA</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="md:hidden text-2xl"><i class="bi bi-list"></i></button>
+            </div>
+        </nav>
+        <div class="bg-cyan-900 text-white py-2 overflow-hidden">
+            <div class="marquee whitespace-nowrap">
+                🔥 Latest Updates: New Hackathon announced by Google | Microsoft hiring for SDE roles | AWS offering free certification courses
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Empower Your Tech Journey</h1>
+                <p class="text-lg mb-8">Practice coding, join hackathons, and find your dream tech job - all in one place.</p>
+                <a href="/practice" class="bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition">Start Coding</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://firebasestorage.googleapis.com/v0/b/widecanvas-d0dd4.appspot.com/o/additional-images%2Ft2.jpg?alt=media&token=f0757697-4fbd-45bd-821d-eb039a3eb0e1" alt="Tech" class="rounded-lg shadow-lg">
+                <img src="https://firebasestorage.googleapis.com/v0/b/widecanvas-d0dd4.appspot.com/o/additional-images%2Ft3.jpg?alt=media&token=2869e22d-2473-40f4-bab5-a148a693540e" alt="Tech" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What We Offer</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-lg bg-gray-50 shadow-lg">
+                    <i class="bi bi-code-slash text-4xl text-cyan-600"></i>
+                    <h3 class="text-xl font-bold mt-4 mb-2">Coding Practice</h3>
+                    <p>Interactive coding environment with support for multiple programming languages.</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-50 shadow-lg">
+                    <i class="bi bi-trophy text-4xl text-cyan-600"></i>
+                    <h3 class="text-xl font-bold mt-4 mb-2">Hackathons</h3>
+                    <p>Stay updated with latest hackathons and participate in exciting challenges.</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-50 shadow-lg">
+                    <i class="bi bi-briefcase text-4xl text-cyan-600"></i>
+                    <h3 class="text-xl font-bold mt-4 mb-2">Job Opportunities</h3>
+                    <p>Direct access to tech job openings from leading companies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathon Section -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Featured Hackathons</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="https://firebasestorage.googleapis.com/v0/b/widecanvas-d0dd4.appspot.com/o/additional-images%2Ft4.jpg?alt=media&token=7968a4be-bdb1-4f4c-a59d-af29ddf0aa16" alt="Hackathon" class="w-full h-48 object-cover">
+                <div class="p-6 bg-white">
+                    <h3 class="font-bold text-xl mb-2">Google DevFest 2024</h3>
+                    <p class="mb-4">Join the largest developer festival organized by Google.</p>
+                    <a href="#" class="text-cyan-600 hover:text-cyan-700">Learn More →</a>
+                </div>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="https://firebasestorage.googleapis.com/v0/b/widecanvas-d0dd4.appspot.com/o/additional-images%2Ft6.jpg?alt=media&token=8eab47e1-dd01-4afa-9104-f4b22512b3a7" alt="Hackathon" class="w-full h-48 object-cover">
+                <div class="p-6 bg-white">
+                    <h3 class="font-bold text-xl mb-2">Microsoft Azure Challenge</h3>
+                    <p class="mb-4">Build innovative solutions using Microsoft Azure.</p>
+                    <a href="#" class="text-cyan-600 hover:text-cyan-700">Learn More →</a>
+                </div>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="https://firebasestorage.googleapis.com/v0/b/widecanvas-d0dd4.appspot.com/o/additional-images%2Ft8.jpg?alt=media&token=16e548bc-2dcf-4195-94c0-0e9108ef0a6e" alt="Hackathon" class="w-full h-48 object-cover">
+                <div class="p-6 bg-white">
+                    <h3 class="font-bold text-xl mb-2">AWS GameDay</h3>
+                    <p class="mb-4">Compete in AWS cloud architecture challenges.</p>
+                    <a href="#" class="text-cyan-600 hover:text-cyan-700">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="tech-gradient text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/about" class="hover:text-cyan-400">About</a></li>
+                        <li><a href="/contact" class="hover:text-cyan-400">Contact</a></li>
+                        <li><a href="/hackathons" class="hover:text-cyan-400">Hackathons</a></li>
+                        <li><a href="/college" class="hover:text-cyan-400">College</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/practice" class="hover:text-cyan-400">Practice</a></li>
+                        <li><a href="/course" class="hover:text-cyan-400">Course</a></li>
+                        <li><a href="/degree" class="hover:text-cyan-400">Degree</a></li>
+                        <li><a href="/archives" class="hover:text-cyan-400">Archives</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Categories</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cyan-900 rounded-full text-sm">Coding</span>
+                        <span class="px-3 py-1 bg-cyan-900 rounded-full text-sm">Development</span>
+                        <span class="px-3 py-1 bg-cyan-900 rounded-full text-sm">Tech</span>
+                        <span class="px-3 py-1 bg-cyan-900 rounded-full text-sm">Career</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-cyan-400"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-cyan-400"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-cyan-400"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-cyan-400"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>© 2024 Verotech. All rights reserved. <a href="/terms" class="hover:text-cyan-400">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.md\\:hidden').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:flex');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('block');
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
